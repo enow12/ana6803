@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charsets="UTF-8">
+        <title>Wine Classification</title>
+</head>
+<body>
+        <form action="{{ url_for('predict')}}" method="POST">
+                Alcohol:               <input type="number" name="alcohol"></br>
+                Citric_Acid:           <input type="number" name="citric_acid"></br>
+                Free_Sulfur_Dioxide:   <input type="number" name="free_sulfur_dioxide"></br>
+                Sulphates:             <input type="number" name="sulphates"></br>
+                PH:                    <input type="number" name="pH"></br>
+
+                <input type=submit value=Submit>
+        </form>
+         My final prediction: {{ predict }}
+</body>
+</html>
