@@ -5,6 +5,7 @@
         <title>Wine Classification</title>
 </head>
 <body>
+<h1> Wine Quality Prediction Site</h1>
         <form action="{{ url_for('predict')}}" method="POST">
                 Alcohol:               <input type="number" name="alcohol"></br>
                 Citric_Acid:           <input type="number" name="citric_acid"></br>
@@ -14,6 +15,6 @@
 
                 <input type=submit value=Submit>
         </form>
-         My final prediction: {{ predict }}
+         <p style= "color: blue;">My final prediction: {{ predict }} </p>
 </body>
 </html>
